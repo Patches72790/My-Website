@@ -1,22 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-header {
-    margin: 0 auto;
-    text-align: center;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #25606B;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(90, 194, 212);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
+#header {
+    font-family: Georgia;
+    text-align: center;
+    height: 100%;
+    max-width: 30%;
+    float: left;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+
 h1 {
-    font-family: Helvetica;
-    font-size: 35px;
+    font-family: Book Antiqua;
 }
 
 nav {
@@ -26,33 +35,37 @@ nav {
     text-align: center;
 }
 
-footer {
-    margin: 0 auto;
+#contactme {
+    width: 25%;
+    height: 10%;
+    border: 2px blue solid;
     text-align: center;
+    bottom: 5%;
+    position: fixed;
+    overflow: auto;
 }
 
-main {
+.section-container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100vw;
+    background-color: #408390;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    float: right;
     text-align: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    align-content: center;
 }
 
-main article {
+.section-container section {
     border: 2px dotted #4CB162;
-    width: 350px;
-    height: 350px;
+    width: 75%;
+    height: 25%;
     overflow: hidden;
+    margin: 10px;
 
 }
 
-/* main article.background:hover {
-    animation-name: entrance;
-    animation-duration: 5s;
-} */
 
 main article h3 {
     font-family: fantasy;
@@ -66,14 +79,12 @@ main article p {
 }
 
 .profile img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 0 auto;
-    padding: 0;
-    position: absolute;
-    left: 100px;
-
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: fill;
+    margin: 10px;
+    border-radius: 10%;
+    border: 2px solid grey;
 }
 
 .image-container {
