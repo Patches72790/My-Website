@@ -15,7 +15,7 @@ body {
     font-family: Georgia;
     text-align: center;
     height: 100%;
-    max-width: 30%;
+    width: 30%;
     float: left;
     display: flex;
     flex-flow: column wrap;
@@ -23,15 +23,13 @@ body {
 
 }
 
-
-h1 {
+#header.h1 {
     font-family: Book Antiqua;
 }
 
 nav {
     font-family: Book Antiqua;
     font-size: 22px;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -40,7 +38,7 @@ nav {
     height: 10%;
     border: 2px blue solid;
     text-align: center;
-    bottom: 5%;
+    bottom: 2%;
     position: fixed;
     overflow: auto;
 }
@@ -55,27 +53,28 @@ nav {
     text-align: center;
     flex-flow: column wrap;
     align-content: center;
+    overflow: auto;
 }
 
 .section-container section {
     border: 2px dotted #4CB162;
+    font-size: 125%;
     width: 75%;
     height: 25%;
     overflow: hidden;
     margin: 10px;
-
 }
 
 
-main article h3 {
-    font-family: fantasy;
+.section-container section h3 {
+    font-family: Book Antiqua;
     font-size: 24px;
     text-decoration: underline;
 }
 
-main article p {
+.section-container section p {
     font-size: 22px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
 }
 
 .profile img {
@@ -86,6 +85,8 @@ main article p {
     border-radius: 10%;
     border: 2px solid grey;
 }
+
+
 
 .image-container {
     background-color: #408390;
