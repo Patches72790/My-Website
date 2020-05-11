@@ -1,3 +1,32 @@
+@media only screen and (max-width: 450px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    div.header {
+        font-size: 12px;
+    }
+
+    body {
+        display: block;
+        position: relative;
+    }
+
+    #header {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    .section-container {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -29,8 +58,9 @@ body {
 
 nav {
     font-family: Book Antiqua;
-    font-size: 22px;
+    font-size: 1.5rem;
     text-align: center;
+    width: 100%;
 }
 
 nav a {
@@ -40,7 +70,6 @@ nav a {
 }
 
 #contactme {
-    /* display: flex; */
     max-width: 15%;
     height: auto;
     text-align: center;
@@ -59,23 +88,22 @@ nav a {
 
 .section-container {
     display: flex;
-    background-color: #408390;
+    background-color: #6fd2e6;
     justify-content: center;
     height: 100%;
     width: 70%;
     float: right;
     text-align: center;
-    flex-flow: column wrap;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     overflow: auto;
 }
 
 .section-container section {
     border: 2px dotted #4CB162;
-    font-size: 125%;
     width: 75%;
-    height: 25%;
-    overflow: hidden;
+    height: auto;
+    overflow: scroll;
     margin: 10px;
 }
 
@@ -86,8 +114,13 @@ nav a {
     text-decoration: underline;
 }
 
-.section-container section p {
-    font-size: 22px;
+.section-container section p{
+    font-size: 1.25rem;
+    font-family: Georgia;
+}
+
+.education {
+    font-size: 1.25rem;
     font-family: Georgia;
 }
 
@@ -101,6 +134,14 @@ nav a {
 }
 
 
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
 
 .image-container {
     background-color: #408390;
