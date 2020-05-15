@@ -7,7 +7,6 @@
 body {
     display: flex;
     background-color: rgb(90, 194, 212);
-    position: absolute;
     height: 100%;
     width: 100%;
 }
@@ -39,6 +38,16 @@ nav a {
     margin: 5% 0;
 }
 
+
+.profile img {
+    max-width: 50%;
+    height: auto;
+    object-fit: fill;
+    margin: 10px;
+    border-radius: 10%;
+    border: 2px solid grey;
+}
+
 #contactme {
     max-width: 15%;
     height: auto;
@@ -60,7 +69,7 @@ nav a {
     display: flex;
     background-color: #6fd2e6;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     width: 70%;
     text-align: center;
     flex-direction: column;
@@ -70,10 +79,10 @@ nav a {
 
 .section-container section {
     border: 2px dotted #4CB162;
-    width: 75%;
-    height: auto;
+    width: 100%;
+    height: 33%;
     overflow: auto;
-    margin: 10px;
+    margin: 3px;
 }
 
 
@@ -88,64 +97,47 @@ nav a {
     font-family: Georgia;
 }
 
-.education {
-    font-size: 1.25rem;
-    font-family: Georgia;
-}
-
-.profile img {
-    max-width: 50%;
-    height: auto;
-    object-fit: fill;
-    margin: 10px;
-    border-radius: 10%;
-    border: 2px solid grey;
-}
-
 
 .photo-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    width: 70%;
+    grid-template-rows: 0.5fr;
+    grid-template-columns: repeat(3, 0.33fr);
+    grid-gap: 15px;
+
+}
+
+.photo-gallery div {
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    display: none;
 }
 
 .image-container {
     background-color: #408390;
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
+    padding-bottom: 5px;
+
 }
 
 .project-container {
     background-color: #113C45;
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
+
 }
 
 .info-container {
     background-color: #2B833F;
-    width: 300px;
-    height: 300px;
-}
-
-.heading-photo {
-    width: 250px;
-    height: 250px;
 
 }
 
-.mushroom-photo {
-    width:250px;
-    height: 250px;
-    object-fit: cover;
-    /* transform: translate(0%, 50%); */
-}
-
-.vw-bug {
-    object-fit: cover;
-    width: 75%;
-    height: 75%;
+.container-6 {
+    background-color: grey;
 }
 
 /* Animation keyframes */
@@ -190,7 +182,7 @@ nav a {
         flex-direction: column;
         align-items: center;
         height: 100%;
-        max-width: 100%;
+        width: 100%;
     }
 
     nav a {
@@ -208,12 +200,14 @@ nav a {
 
     #header {
         width: 100%;
-        height: 40%;
+        height: 30%;
         max-height: auto;
     }
 
     .section-container {
         width: 100%;
-        height: auto;
+        max-height: 100vh;
+        height: 70vh;
+
     }
 }
