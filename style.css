@@ -22,7 +22,7 @@ body {
     align-content: space-between;
 }
 
-#header.h1 {
+#header h1 {
     font-family: Book Antiqua;
 }
 
@@ -86,7 +86,7 @@ nav a {
     height: 100vh;
 }
 
-.section-container section h3 {
+h3 {
     font-family: Book Antiqua;
     font-size: 24px;
     text-decoration: underline;
@@ -100,21 +100,18 @@ nav a {
 
 .photo-gallery {
     display: grid;
-    width: 70%;
+    width: 70vw;
     grid-template-rows: 0.5fr;
     grid-template-columns: repeat(3, 0.33fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
     justify-items: center;
     align-items: center;
-    background-color: lightslategrey;
-
 }
 
 .photo-gallery div {
     width: 75%;
     height: 75%;
     border: 1px black solid;
-
 }
 
 
@@ -187,5 +184,9 @@ nav a {
         max-height: 100vh;
         height: 70vh;
 
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
     }
 }
